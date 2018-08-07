@@ -27,6 +27,7 @@ import android.os.Build.VERSION_CODES;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.VisibleForTesting;
+import android.support.customtabs.CustomTabsService;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -51,8 +52,7 @@ public final class BrowserSelector {
      * The service we expect to find on a web browser that indicates it supports custom tabs.
      */
     @VisibleForTesting
-    static final String ACTION_CUSTOM_TABS_CONNECTION =
-            "android.support.customtabs.action.CustomTabsService";
+    static final String ACTION_CUSTOM_TABS_CONNECTION = CustomTabsService.ACTION_CUSTOM_TABS_CONNECTION;
 
     /**
      * An arbitrary (but unregistrable, per
